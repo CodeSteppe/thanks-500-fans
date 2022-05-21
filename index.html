@@ -47,16 +47,20 @@
         confetti({
           particleCount: 3,
           angle: 60,
-          spread: 60,
+          spread: 90,
           origin: { x: 0 },
-          colors: colors
+          colors: colors,
+          startVelocity: 90,
+          ticks: 240
         });
         confetti({
           particleCount: 3,
           angle: 120,
-          spread: 60,
+          spread: 90,
           origin: { x: 1 },
-          colors: colors
+          colors: colors,
+          startVelocity: 90,
+          ticks: 240
         });
         if (Date.now() < end) {
           requestAnimationFrame(frame);
