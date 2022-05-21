@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-:root {
-  --duration: 20s;
-}
-
 * {
   margin: 0;
   padding: 0;
