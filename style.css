@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(45deg, #ff0000, #ff4800);
+  background: linear-gradient(45deg, #7e0909, #ff0000);
   height: 100vh;
   display: grid;
   place-items: center;
@@ -20,11 +20,11 @@ body {
   display: grid;
   place-items: center;
   transform-style: preserve-3d;
-  transform: rotateX(18deg);
+  transform: rotateX(12deg);
 }
 
 h1 {
-  color: rgb(111, 255, 0);
+  color: #ffde03;
   position: absolute;
   font-size: 14vw;
   font-weight: normal;
