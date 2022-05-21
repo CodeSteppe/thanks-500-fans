@@ -46,10 +46,19 @@ h1 {
 }
 
 @keyframes move {
-  0%, 30% {
+  0%,
+  30% {
     transform: translateZ(calc(-1000px + var(--i) * 3px)) rotateX(60deg);
   }
   100% {
     transform: translateZ(calc(100px + var(--i) * 3px)) rotateX(0);
   }
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

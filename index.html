@@ -32,6 +32,39 @@
     <h1 style="--i:18">thank you!</h1>
     <h1 style="--i:19">thank you!</h1>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    var myCanvas = document.createElement('canvas');
+    document.body.appendChild(myCanvas);
+
+    var end = Date.now() + (3600 * 1000);
+
+    // go Buckeyes!
+    var colors = ['#ffffff', '#44d40b', '#ffff00'];
+    setTimeout(() => {
+      (function frame() {
+        confetti({
+          particleCount: 3,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 },
+          colors: colors
+        });
+        confetti({
+          particleCount: 3,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 },
+          colors: colors
+        });
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      }());
+    }, [2000]);
+  </script>
 </body>
 
 </html>
